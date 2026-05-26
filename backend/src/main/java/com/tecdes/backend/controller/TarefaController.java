@@ -20,7 +20,8 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/tarefas")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
+
 public class TarefaController {
 
     private final TarefaRepository repository;
